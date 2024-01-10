@@ -1,0 +1,151 @@
+escape_char /
+comment_char %
+
+LC_IDENTIFICATION
+title      "English locale for the Netherlands"
+source     "none"
+contact    ""
+email      "github@cascer1.space"
+language   "English"
+territory  "Netherlands"
+revision   "1.0"
+date       "2024-01-10"
+
+category "i18n:2012";LC_IDENTIFICATION
+category "i18n:2012";LC_CTYPE
+category "i18n:2012";LC_COLLATE
+category "i18n:2012";LC_TIME
+category "i18n:2012";LC_NUMERIC
+category "i18n:2012";LC_MONETARY
+category "i18n:2012";LC_MESSAGES
+category "i18n:2012";LC_PAPER
+category "i18n:2012";LC_NAME
+category "i18n:2012";LC_ADDRESS
+category "i18n:2012";LC_TELEPHONE
+category "i18n:2012";LC_MEASUREMENT
+END LC_IDENTIFICATION
+
+LC_CTYPE
+% From en_US
+copy "i18n"
+END LC_CTYPE
+
+LC_COLLATE
+% From en_US
+copy "iso14651_t1"
+END LC_COLLATE
+
+LC_MONETARY
+% From nl_NL
+int_curr_symbol     "EUR "
+currency_symbol     "<U20AC>"
+% From en_US
+mon_decimal_point   "."
+mon_thousands_sep   ","
+mon_grouping        3;3
+positive_sign       ""
+negative_sign       "-"
+int_frac_digits     2
+frac_digits         2
+p_cs_precedes       1
+int_p_sep_by_space  1
+p_sep_by_space      0
+n_cs_precedes       1
+int_n_sep_by_space  1
+n_sep_by_space      0
+p_sign_posn         1
+n_sign_posn         1
+END LC_MONETARY
+
+LC_NUMERIC
+%From en_US
+copy "en_US"
+END LC_NUMERIC
+
+LC_TIME
+% copy "en_GB"
+abday       "Sun";"Mon";"Tue";"Wed";"Thu";"Fri";"Sat"
+day         "Sunday";/
+            "Monday";/
+            "Tuesday";/
+            "Wednesday";/
+            "Thursday";/
+            "Friday";/
+            "Saturday"
+abmon       "Jan";"Feb";/
+            "Mar";"Apr";/
+            "May";"Jun";/
+            "Jul";"Aug";/
+            "Sep";"Oct";/
+            "Nov";"Dec"
+mon         "January";/
+            "February";/
+            "March";/
+            "April";/
+            "May";/
+            "June";/
+            "July";/
+            "August";/
+            "September";/
+            "October";/
+            "November";/
+            "December"
+d_t_fmt     "%a %d %b %Y %T"
+date_fmt    "%a %d %b %Y %T %Z"
+t_fmt       "%T"
+am_pm       "";""
+t_fmt_ampm  ""
+first_weekday 2
+week 7;19971130;4
+d_fmt       "%Y-%m-%d"
+END LC_TIME
+
+LC_MESSAGES
+% From en_US
+yesexpr             "^[+1yY]"
+noexpr              "^[-0nN]"
+yesstr              "yes"
+nostr               "no"
+END LC_MESSAGES
+
+LC_PAPER
+copy "nl_NL"
+END LC_PAPER
+
+LC_NAME
+% From en_US
+name_fmt            "%d%t%g%t%m%t%f"
+name_miss           "Miss."
+name_mr             "Mr."
+name_mrs            "Mrs."
+name_ms             "Ms."
+% Custom en_NL
+name_gen            "Mr./Mrs."
+END LC_NAME
+
+LC_ADDRESS
+% From en_US
+lang_name           "English"
+lang_ab             "en"
+lang_term           "eng"
+lang_lib            "eng"
+% From nl_NL
+postal_fmt          "%f%N%a%N%d%N%b%N%s %h %e %r%N%z %T%N%c%N"
+country_ab2         "NL"
+country_ab3         "NLD"
+country_num         528
+country_car         "NL"
+% Custom en_NL
+country_name        "Netherlands"
+END LC_ADDRESS
+
+LC_TELEPHONE
+tel_int_fmt    "+%c %a %l"
+int_prefix     "31"
+int_select     "00"
+tel_dom_fmt    "(%A) %l"
+END LC_TELEPHONE
+
+LC_MEASUREMENT
+copy "nl_NL"
+END LC_MEASUREMENT
