@@ -11,7 +11,7 @@ Then, compile and select it:
 
 ```sh
 sudo localedef --no-archive -i en_NL -f UTF-8 en_NL.UTF-8
-sudo localectl set-lcoale en_NL.UTF-8
+sudo localectl set-locale en_NL.UTF-8
 gsettings set org.gnome.system.locale region "en_NL.utf8"
 ```
 
